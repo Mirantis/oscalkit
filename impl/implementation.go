@@ -165,8 +165,11 @@ func CreateComponentConfiguration(guid uuid.UUID, componentConfName, narrative s
 		Description: narrative,
 		ConfigurableValues: []implementation.ConfigurableValue{
 			implementation.ConfigurableValue{
-				ValueID: uuid.NewV4().String(),
-				Value:   "0",
+				ValueID: func() uuid.UUID {
+					t, _ := uuid.NewV4()
+					return t
+				}().String(),
+				Value: "0",
 			},
 		},
 	}

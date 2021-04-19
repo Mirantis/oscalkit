@@ -1,13 +1,16 @@
 module github.com/docker/oscalkit
 
+go 1.16
+
 require (
-	github.com/fatih/color v1.7.0
+	github.com/fatih/color v1.7.0 // indirect
 	github.com/iancoleman/strcase v0.0.0-20180726023541-3605ed457bf7
+	github.com/jinzhu/inflection v1.0.0
 	github.com/mattn/go-colorable v0.0.9 // indirect
 	github.com/mattn/go-isatty v0.0.4 // indirect
 	github.com/mitchellh/go-wordwrap v1.0.0
 	github.com/santhosh-tekuri/jsonschema v0.0.0-20181206154329-5d49c9dfc783
-	github.com/satori/go.uuid v1.2.0
+	github.com/satori/go.uuid v1.2.1-0.20181028125025-b2ce2384e17b
 	github.com/sirupsen/logrus v1.3.0
 	github.com/urfave/cli v0.0.0-20181029213200-b67dcf995b6a
 	golang.org/x/crypto v0.0.0-20190103213133-ff983b9c42bc // indirect
